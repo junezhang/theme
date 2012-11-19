@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Theme</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="HSS UX">
+    <link href="css/theme.css" rel="stylesheet">
+    <link rel="stylesheet" href="js/jqueryui/css/ui-lightness/jquery-ui-1.8.20.custom.css" media="all" />
+    <link href="images/favicon.ico" rel="shortcut icon">
+    <script src="js/theme.js" ></script>
+</head>
+<body id='eso-body'>
+<div class="server"><div>stage server</div></div>
+<div class="eso-inner">
+
+<header id='eso-topbar'>
+  <a href="index.html" title="go back home" class="logo">Project Name</a>
+  <a href="https://engineering.redhat.com/hss-portal" class="eso-logo">Developed by HSS</a>
+  <ul class="quick-menu unstyled">
+  <li class="dropdown header-help">
+    <a class="dropdown-toggle" data-toggle="dropdown" href="#" title="User Guide">Help<b class="caret"></b></a>
+      <ul class="dropdown-menu pull-right">
+        <li><a href="#">User Guide</a></li>
+        <li class="divider"></li>
+        <li><a href="#">Report Bug</a></li>
+        <li><a href="mailto:zhangjune99@gmail.com">Contact Developers</a></li>
+      </ul>
+    </li>
+ <li class="dropdown header-user">
+   <a class="dropdown-toggle" data-toggle="dropdown" href="#" title="User Info">Welcome, user</a>
+	<span>|</span>
+    </li>
+ </ul>
+<input type="text" class="quick-search" placeholder="search" onClick="this.placeholder=''">
+</header>
+
+<div class="navbar">
+  <ul class="nav">
+    <li class="active"><a href="index.html">Home</a></li>
+    <li class=""><a href="#typography">Typographic</a></li>
+    <li class=""><a href="#tables">Table</a></li>
+    <li class=""><a href="#forms">Form</a></li>
+    <li class=""><a href="#buttons">Button</a></li>
+    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#navigation">Navigation<b class="caret"></b></a>
+      <ul class="dropdown-menu">
+        <li><a href="#tabs">Tab</a></li>
+        <li><a href="#pagination">Pagination</a></li>
+        <li><a href="#breadcrumb">Breadcrumb</a></li>
+      </ul>
+    </li>
+    <li class=""><a href="index.html#modals">Popup</a></li>
+    <li class=""><a href="#typeahead">Typeahead</a></li>
+  </ul>
+    
+</div>
+<div class="content">
+   
+<div class="breadcrumb">
+    <ul class="pull-left">
+        <li><a href="#">Home</a> <span class="divider">/</span></li>
+        <li><a href="example.html">Example</a> <span class="divider">/</span></li>
+        <li class="active">Data</li>
+    </ul>
+        
+    <ul class="select-navbar-color">
+        <li>Resolution：</li>
+        <li><a href="#" id="fixed">Fixed</a><span>|</span></li><li><a href="#" id='flexible'>Flexible</a></li>
+    </ul>
+    <script>
+    $('fixed').click(function(){$('.eso-inner').css('width','1120px')});
+	$('flexible').click(function(){$('.eso-inner').css('width','90%')});
+	
+    
+    
+    </script>
+    <ul class="select-navbar-color">
+        <li>Wallpaper：</li>
+        <li><a href="#" onClick="$('#eso-body').removeClass('darktheme')">Red</a><span>|</span></li><li><a href="#" onClick="$('#eso-body').addClass('darktheme')">Grey</a></li>
+    </ul>
+     <div class="clear"></div>
+</div>
+<section id="tables" >
+  <div class="page-header">
+    <h1>Tables</h1>
+  </div>
+  <div class="row-fluid">
+    <div class="span8">
+      <table class="eso-table">
+        <colgroup>
+          <col class="span2">
+          <col class="span2">
+          <col class="span2">
+          <col class="span2">
+          <col class="span2">
+        </colgroup>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>City</th>
+            <th>State</th>
+            <th>Age</th>
+            <th>Phone</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              Barry McBazz
+            </td>
+            <td>
+              Brisbane
+            </td>
+            <td>
+              QLD
+            </td>
+            <td>
+              33
+            </td>
+            <td>
+              0412321312
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Testy McTest
+            </td>
+            <td>
+              Sydney
+            </td>
+            <td>
+              NSW
+            </td>
+            <td>
+              44
+            </td>
+            <td>
+              0412325399
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Anny McBazz
+            </td>
+            <td>
+              Beijing
+            </td>
+            <td>
+              NAY
+            </td>
+            <td>
+              28
+            </td>
+            <td>
+              0412321389
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Barry McBazz
+            </td>
+            <td>
+              Brisbane
+            </td>
+            <td>
+              QLD
+            </td>
+            <td>
+              33
+            </td>
+            <td>
+              0412321312
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Barry Balala
+            </td>
+            <td>
+              Brisbane
+            </td>
+            <td>
+              QLD
+            </td>
+            <td>
+              35
+            </td>
+            <td>
+              0468321312
+            </td>
+          </tr>
+          <tr>
+            <td>
+              June McBazz
+            </td>
+            <td>
+              Brisbane
+            </td>
+            <td>
+              QLD
+            </td>
+            <td>
+              23
+            </td>
+            <td>
+              0987321312
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Barry McBazz
+            </td>
+            <td>
+              Brisbane
+            </td>
+            <td>
+              QLD
+            </td>
+            <td>
+              33
+            </td>
+            <td>
+              0412321312
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="span4">
+<pre class="prettyprint linenums">
+&lt;table class=<span class='atv'>"eso-table"</span>&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;…&lt;/th&gt;
+      &lt;th&gt;…&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;…&lt;/td&gt;
+      &lt;td&gt;…&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+</pre>
+<p><a href="datatable/datatable.html" target="_blank">Show Datatable Style</a></p>
+    </div>
+  </div>
+</section>
+
+<section id="forms" >
+  <div class="page-header">
+    <h1>Forms</h1>
+  </div>
+  <div class="row-fluid">
+    <div class="span8">
+    <form class="form-horizontal">
+          <div class="control-group">
+            <label class="control-label" for="input01">Text input</label>
+            <div class="controls">
+              <input type="text" class="input-xlarge" id="input01">
+              <p class="help-block">In addition to freeform text, any HTML5 text-based input appears like so.</p>
+            </div>
+          </div>
+          <div class="control-group">
+            <label class="control-label" for="optionsCheckbox">Checkbox</label>
+            <div class="controls">
+              <label class="checkbox">
+                <input type="checkbox" id="optionsCheckbox" value="option1">
+                Option one is this and that&mdash;be sure to include why it's great
+              </label>
+            </div>
+          </div>
+          <div class="control-group">
+        	
+           <label class="control-label">Single-select</label>
+           <div class="controls">
+             <select data-placeholder="Your Favorite Football Team" style="width:350px;" class="chzn-select" tabindex="6">
+             <option value=""></option>
+             <optgroup label="NFC EAST">
+               <option>Dallas Cowboys</option>
+               <option>New York Giants</option>
+               <option>Philadelphia Eagles</option>
+               <option>Washington Redskins</option>
+             </optgroup>
+             <optgroup label="NFC NORTH">
+               <option>Chicago Bears</option>
+               <option>Detroit Lions</option>
+               <option>Green Bay Packers</option>
+               <option>Minnesota Vikings</option>
+             </optgroup>
+             <optgroup label="NFC SOUTH">
+               <option>Atlanta Falcons</option>
+               <option>Carolina Panthers</option>
+               <option>New Orleans Saints</option>
+               <option>Tampa Bay Buccaneers</option>
+             </optgroup>
+             <optgroup label="NFC WEST">
+               <option>Arizona Cardinals</option>
+               <option>St. Louis Rams</option>
+               <option>San Francisco 49ers</option>
+               <option>Seattle Seahawks</option>
+             </optgroup>
+             <optgroup label="AFC EAST">
+               <option>Buffalo Bills</option>
+               <option>Miami Dolphins</option>
+               <option>New England Patriots</option>
+               <option>New York Jets</option>
+             </optgroup>
+             <optgroup label="AFC NORTH">
+               <option>Baltimore Ravens</option>
+               <option>Cincinnati Bengals</option>
+               <option>Cleveland Browns</option>
+               <option>Pittsburgh Steelers</option>
+             </optgroup>
+             <optgroup label="AFC SOUTH">
+               <option>Houston Texans</option>
+               <option>Indianapolis Colts</option>
+               <option>Jacksonville Jaguars</option>
+               <option>Tennessee Titans</option>
+             </optgroup>
+             <optgroup label="AFC WEST">
+               <option>Denver Broncos</option>
+               <option>Kansas City Chiefs</option>
+               <option>Oakland Raiders</option>
+               <option>San Diego Chargers</option>
+             </optgroup>
+           </select>
+           </div>
+         </div>
+         <div class="control-group">
+        	
+           <label class="control-label">Multiple-select</label>
+           <div class="controls">
+             <select data-placeholder="Your Favorite Football Team" style="width:350px;" class="chzn-select" multiple tabindex="6">
+             <option value=""></option>
+             <optgroup label="NFC EAST">
+               <option>Dallas Cowboys</option>
+               <option>New York Giants</option>
+               <option>Philadelphia Eagles</option>
+               <option>Washington Redskins</option>
+             </optgroup>
+             <optgroup label="NFC NORTH">
+               <option>Chicago Bears</option>
+               <option>Detroit Lions</option>
+               <option>Green Bay Packers</option>
+               <option>Minnesota Vikings</option>
+             </optgroup>
+             <optgroup label="NFC SOUTH">
+               <option>Atlanta Falcons</option>
+               <option>Carolina Panthers</option>
+               <option>New Orleans Saints</option>
+               <option>Tampa Bay Buccaneers</option>
+             </optgroup>
+             <optgroup label="NFC WEST">
+               <option>Arizona Cardinals</option>
+               <option>St. Louis Rams</option>
+               <option>San Francisco 49ers</option>
+               <option>Seattle Seahawks</option>
+             </optgroup>
+             <optgroup label="AFC EAST">
+               <option>Buffalo Bills</option>
+               <option>Miami Dolphins</option>
+               <option>New England Patriots</option>
+               <option>New York Jets</option>
+             </optgroup>
+             <optgroup label="AFC NORTH">
+               <option>Baltimore Ravens</option>
+               <option>Cincinnati Bengals</option>
+               <option>Cleveland Browns</option>
+               <option>Pittsburgh Steelers</option>
+             </optgroup>
+             <optgroup label="AFC SOUTH">
+               <option>Houston Texans</option>
+               <option>Indianapolis Colts</option>
+               <option>Jacksonville Jaguars</option>
+               <option>Tennessee Titans</option>
+             </optgroup>
+             <optgroup label="AFC WEST">
+               <option>Denver Broncos</option>
+               <option>Kansas City Chiefs</option>
+               <option>Oakland Raiders</option>
+               <option>San Diego Chargers</option>
+             </optgroup>
+           </select>
+           </div>
+           </div>
+           <div class="control-group">
+            <label class="control-label">Uneditable input</label>
+            <div class="controls">
+              <span class="input-xlarge uneditable-input">Some value here</span>
+            </div>
+          </div>
+          <div class="control-group">
+            <label for="disabledInput" class="control-label">Disabled input</label>
+            <div class="controls">
+              <input type="text" disabled="" placeholder="Disabled input here…" id="disabledInput" class="input-xlarge disabled">
+            </div>
+          </div>
+          <div class="control-group warning">
+            <label for="inputWarning" class="control-label">Input with warning</label>
+            <div class="controls">
+              <input type="text" id="inputWarning">
+              <span class="help-inline">Something may have gone wrong</span>
+            </div>
+          </div>
+          <div class="control-group error">
+            <label for="inputError" class="control-label">Input with error</label>
+            <div class="controls">
+              <input type="text" id="inputError">
+              <span class="help-inline">Please correct the error</span>
+            </div>
+          </div>
+          <div class="control-group success">
+            <label for="inputSuccess" class="control-label">Input with success</label>
+            <div class="controls">
+              <input type="text" id="inputSuccess">
+              <span class="help-inline">Woohoo!</span>
+            </div>
+          </div>
+          <div class="control-group">
+            <label class="control-label">Inline checkboxes</label>
+            <div class="controls">
+              <label class="checkbox inline">
+                <input type="checkbox" value="option1" id="inlineCheckbox1"> 1
+              </label>
+              <label class="checkbox inline">
+                <input type="checkbox" value="option2" id="inlineCheckbox2"> 2
+              </label>
+              <label class="checkbox inline">
+                <input type="checkbox" value="option3" id="inlineCheckbox3"> 3
+              </label>
+            </div>
+          </div>
+          <div class="control-group">
+            <label class="control-label">Checkboxes</label>
+            <div class="controls">
+              <label class="checkbox">
+                <input type="checkbox" value="option1" name="optionsCheckboxList1">
+                Option one is this and that&mdash;be sure to include why it's great
+              </label>
+              <label class="checkbox">
+                <input type="checkbox" value="option2" name="optionsCheckboxList2">
+                Option two can also be checked and included in form results
+              </label>
+              <label class="checkbox">
+                <input type="checkbox" value="option3" name="optionsCheckboxList3">
+                Option three can&mdash;yes, you guessed it&mdash;also be checked and included in form results
+              </label>
+              <p class="help-block"><strong>Note:</strong> Labels surround all the options for much larger click areas and a more usable form.</p>
+            </div>
+          </div>
+          <div class="control-group">
+            <label class="control-label">Radio buttons</label>
+            <div class="controls">
+              <label class="radio">
+                <input type="radio" checked="" value="option1" id="optionsRadios1" name="optionsRadios">
+                Option one is this and that&mdash;be sure to include why it's great
+              </label>
+              <label class="radio">
+                <input type="radio" value="option2" id="optionsRadios2" name="optionsRadios">
+                Option two can is something else and selecting it will deselect option one
+              </label>
+            </div>
+          </div>
+          <div class="control-group">
+            <label class="control-label" for="fileInput">File input</label>
+            <div class="controls">
+              <input class="input-file" id="fileInput" type="file">
+            </div>
+          </div>
+          <div class="control-group">
+            <label class="control-label" for="textarea">Textarea</label>
+            <div class="controls">
+              <textarea class="input-xlarge" id="textarea" rows="3"></textarea>
+            </div>
+          </div>
+          <div class="control-group">	
+          	<script type="text/javascript">
+				$(function() {
+				$( "#datepicker" ).datepicker();
+				}); 
+			</script>
+            <label class="control-label">Date</label>
+            <div class="controls">
+              <input type="text" id="datepicker" class="Datepicker">
+            </div>
+          </div>
+		  
+        
+          
+          
+          <div class="form-actions">
+            <button type="submit" class="btn btn-primary">Save changes</button>
+            <button class="btn">Cancel</button>
+          </div>
+      </form>
+      
+    </div><!-- /.span -->
+    <div class="span4">
+      <pre class="prettyprint linenums">
+&lt;form class=<span class='atv'>"form-horizontal"</span>&gt;
+    &lt;div class=<span class='atv'>"control-group"</span>&gt;
+      &lt;label class=<span class='atv'>"control-label"</span> for="input01"&gt;Text input&lt;/label&gt;
+      &lt;div class=<span class='atv'>"controls"</span>&gt;
+        &lt;input type="text" class=<span class='atv'>"input-xlarge"</span> id="input01"&gt;
+        &lt;p class=<span class='atv'>"help-block"</span>&gt;Supporting help text&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/form&gt;
+</pre>
+      
+
+    </div>
+  </div>
+</section>
+
+
+
+<section id="buttons" >
+  <div class="page-header">
+    <h1>Buttons <small>apply these to only "a" "button" "input" elements.</small></h1>
+  </div>
+  <div class="row-fluid">
+    	<div class="span8">
+  <button class="btn">Default</button><br>
+  <button class="btn btn-primary">Primary</button><br>
+  <button class="btn btn-info">Info</button><br>
+  <button class="btn btn-success">Success</button><br>
+  
+  <button class="btn btn-warning">Warning</button><br>
+  <button class="btn btn-danger">Danger</button><br>
+  <button class="btn btn-inverse">Inverse</button><br>
+  </div>
+        <div class="span4">
+          <pre class="prettyprint linenums">
+            <ol class="linenums"><li class="L0"><span class="tag">&lt;button</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=&quot;</span><span class="atv">btn</span><span class="tag">&quot;&gt;</span><sapn>text</span><span class="tag">&lt;/button&gt;</span></li><li class="L1"><span class="tag">&lt;input&nbsp;type="button"&nbsp;class=&quot;</span><span class="atv">btn btn-primary</span><span>&quot;/&gt;</span></li><li class="L2"><span class="tag">&lt;input&nbsp;type="button"&nbsp;class=&quot;</span><span class="atv">btn btn-info</span><span>&quot;/&gt;</span></li><li class="L3"><span class="tag">&lt;input&nbsp;type="button"&nbsp;class=&quot;</span><span class="atv">btn btn-success</span><span>&quot;/&gt;</span></li><li class="L4"><span class="tag">&lt;input&nbsp;type="button"&nbsp;class=&quot;</span><span class="atv">btn btn-warning</span><span>&quot;/&gt;</span></li><li class="L5"><span class="tag">&lt;input&nbsp;type="button"&nbsp;class=&quot;</span><span class="atv">btn btn-danger</span><span>&quot;&nbsp;&quot;/&gt;</span></li><li class="L6"><span class="tag">&lt;input&nbsp;type="button"&nbsp;class=&quot;</span><span class="atv">btn btn-inverse</span><span>&quot;/&gt;</span></li></ol>    
+          </pre>
+          
+          </div>
+ 	</div> 
+
+</section>
+
+<section id="buttonsgroup" >
+  <div class="page-header">
+    <h1>Button Group</h1>
+  </div>
+  <div class="row-fluid">
+    	<div class="span8">
+          <div class="btn-toolbar">
+          <div class="btn-group">
+            <button class="btn"> Left</button>
+          <button class="btn">Middle</button>
+          <button class="btn">Right</button>
+          </div>
+          <div class="btn-group">
+            <button class="btn"><i class="icon-gift"></i>Gift</button>
+          <button class="btn"><i class=" icon-leaf"></i>Leaf</button>
+          <button class="btn"><i class="icon-fire"></i>Fire</button>
+          </div>
+        </div>
+  		</div>
+  		<div class="span4">
+  <pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=&quot;</span><span class="atv">btn-toolbar</span><span class="tag">&quot;&gt;</span></li><li class="L1"><span class="tag">&lt;div&nbsp;class=&quot;</span><span class="atv">btn-group</span><span>&quot;/&gt;</span></li><li class="L2"><span class="tag">&lt;button&nbsp;class=&quot;</span><span class="atv">btn</span><span>&quot;/&gt;Left&lt;/button&gt;</span></li><li class="L3"><span class="tag">&lt;button&nbsp;class=&quot;</span><span class="atv">btn</span><span>&quot;/&gt;Middle&lt;/button&gt;</span></li><li class="L4"><span class="tag">&lt;button&nbsp;class=&quot;</span><span class="atv">btn</span><span>&quot;/&gt;Right&lt;/button&gt;</span></li><li class="L5"><span class="tag">&lt;/div&gt;</span></li><li class="L6"><span class="tag">&lt;/div&gt;</span></li></ol></pre>
+  
+  </div>
+  </div>
+
+</section>
+
+
+
+<section id="pagination" >
+    <div class="page-header">
+        <h1>
+        Pagination
+        <small>Two options for paging through content</small>
+        </h1>
+    </div>
+    <div class="row-fluid">
+    	<div class="span8">
+            <div class="pagination">	
+                <ul>
+                  <li class="disabled"><a href="#">«</a></li>
+                  <li class="active"><a href="#">1</a></li>
+                  <li><a href="#">2</a></li>
+                  <li><a href="#">3</a></li>
+                  <li><a href="#">4</a></li>
+                  <li class="disabled"><a href="#">..</a></li>
+                  <li><a href="#">11</a></li>
+                  <li><a href="#">12</a></li>
+                  <li><a href="#">»</a></li>
+                </ul>
+             </div>
+        </div>
+        <div class="span4">
+       	  <pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"pagination"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">  </span><span class="tag">&lt;ul&gt;</span></li><li class="L2"><span class="pln">    </span><span class="tag">&lt;li&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span>"#"</span><span class="tag">&gt;</span><span class="pln">Prev</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span></li><li class="L3"><span class="pln">    </span><span class="tag">&lt;li</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"active"</span><span class="tag">&gt;</span></li><li class="L4"><span class="pln">      </span><span class="tag">&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span>"#"</span><span class="tag">&gt;</span><span class="pln">1</span><span class="tag">&lt;/a&gt;</span></li><li class="L5"><span class="pln">    </span><span class="tag">&lt;/li&gt;</span></li><li class="L6"><span class="pln">    </span><span class="tag">&lt;li&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span>"#"</span><span class="tag">&gt;</span><span class="pln">2</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span></li><li class="L7"><span class="pln">    </span><span class="tag">&lt;li&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span>"#"</span><span class="tag">&gt;</span><span class="pln">3</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span></li><li class="L8"><span class="pln">    </span><span class="tag">&lt;li&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span>"#"</span><span class="tag">&gt;</span><span class="pln">4</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span></li><li class="L9"><span class="pln">    </span><span class="tag">&lt;li&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span>"#"</span><span class="tag">&gt;</span><span class="pln">Next</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span></li><li class="L0"><span class="pln">  </span><span class="tag">&lt;/ul&gt;</span></li><li class="L1"><span class="tag">&lt;/div&gt;</span></li></ol></pre>
+        </div>
+    </div>
+</section>
+
+
+<section id="breadcrumb" >
+  <div class="page-header">
+    <h1>Breadcrumbs <small></small></h1>
+  </div>
+
+  <div class="row-fluid">
+    <div class="span8 breadcrumb">
+      <ul class="">
+        <li><a href="#">Home</a> <span class="divider">/</span></li>
+        <li><a href="#">Library</a> <span class="divider">/</span></li>
+        <li class="active">Data</li>
+      </ul>
+    </div>
+    <div class="span4">
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="tag">&lt;ul</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"breadcrumb"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">  </span><span class="tag">&lt;li&gt;</span></li><li class="L2"><span class="pln">    </span><span class="tag">&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span>"#"</span><span class="tag">&gt;</span><span class="pln">Home</span><span class="tag">&lt;/a&gt;</span><span class="pln"> </span><span class="tag">&lt;span</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"divider"</span><span class="tag">&gt;</span><span class="pln">/</span><span class="tag">&lt;/span&gt;</span></li><li class="L3"><span class="pln">  </span><span class="tag">&lt;/li&gt;</span></li><li class="L4"><span class="pln">  </span><span class="tag">&lt;li&gt;</span></li><li class="L5"><span class="pln">    </span><span class="tag">&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span>"#"</span><span class="tag">&gt;</span><span class="pln">Library</span><span class="tag">&lt;/a&gt;</span><span class="pln"> </span><span class="tag">&lt;span</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"divider"</span><span class="tag">&gt;</span><span class="pln">/</span><span class="tag">&lt;/span&gt;</span></li><li class="L6"><span class="pln">  </span><span class="tag">&lt;/li&gt;</span></li><li class="L7"><span class="pln">  </span><span class="tag">&lt;li</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"active"</span><span class="tag">&gt;</span><span class="pln">Data</span><span class="tag">&lt;/li&gt;</span></li><li class="L8"><span class="tag">&lt;/ul&gt;</span></li></ol></pre>
+    </div>
+  </div>
+
+</section>
+
+
+<section id="tabs" >
+      <div class="page-header">
+        <h1>Tabs <small>tab.js</small></h1>
+      </div>
+      <div class="row-fluid">
+        <div class="span8">
+          <ul id="myTab" class="nav nav-tabs">
+            <li class="active"><a href="#home" data-toggle="tab">Home</a></li>
+            <li><a href="#profile" data-toggle="tab">Profile</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#dropdown1" data-toggle="tab">@fat</a></li>
+                <li><a href="#dropdown2" data-toggle="tab">@mdo</a></li>
+              </ul>
+            </li>
+          </ul>
+          <div id="myTabContent" class="tab-content">
+            <div class="tab-pane fade in active" id="home">
+              <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
+            </div>
+            <div class="tab-pane fade" id="profile">
+              <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit, sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester stumptown, tumblr butcher vero sint qui sapiente accusamus tattooed echo park.</p>
+            </div>
+            <div class="tab-pane fade" id="dropdown1">
+              <p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork. Williamsburg banh mi whatever gluten-free, carles pitchfork biodiesel fixie etsy retro mlkshk vice blog. Scenester cred you probably haven't heard of them, vinyl craft beer blog stumptown. Pitchfork sustainable tofu synth chambray yr.</p>
+            </div>
+            <div class="tab-pane fade" id="dropdown2">
+              <p>Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland seitan DIY, art party locavore wolf cliche high life echo park Austin. Cred vinyl keffiyeh DIY salvia PBR, banh mi before they sold out farm-to-table VHS viral locavore cosby sweater. Lomo wolf viral, mustache readymade thundercats keffiyeh craft beer marfa ethical. Wolf salvia freegan, sartorial keffiyeh echo park vegan.</p>
+            </div>
+          </div>
+         </div> 
+		<div class="span4">
+            <pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="tag">&lt;ul</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"nav nav-tabs"</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"myTab"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">  </span><span class="tag">&lt;li</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"active"</span><span class="tag">&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv1">"#home"</span><span class="tag">&gt;</span><span class="pln">Home</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span></li><li class="L2"><span class="pln">  </span><span class="tag">&lt;li&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv1">"#profile"</span><span class="tag">&gt;</span><span class="pln">Profile</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span></li><li class="L3"><span class="pln">  </span><span class="tag">&lt;li&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv1">"#messages"</span><span class="tag">&gt;</span><span class="pln">Messages</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span></li><li class="L4"><span class="pln">  </span><span class="tag">&lt;li&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv1">"#settings"</span><span class="tag">&gt;</span><span class="pln">Settings</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span></li><li class="L5"><span class="tag">&lt;/ul&gt;</span></li><li class="L6"><span class="pln">&nbsp;</span></li><li class="L7"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"tab-content"</span><span class="tag">&gt;</span></li><li class="L8"><span class="pln">  </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"tab-pane active"</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"home"</span><span class="tag">&gt;</span><span class="pln">...</span><span class="tag">&lt;/div&gt;</span></li><li class="L9"><span class="pln">  </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"tab-pane"</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv1">"profile"</span><span class="tag">&gt;</span><span class="pln">...</span><span class="tag">&lt;/div&gt;</span></li><li class="L0"><span class="pln">  </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"tab-pane"</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv1">"messages"</span><span class="tag">&gt;</span><span class="pln">...</span><span class="tag">&lt;/div&gt;</span></li><li class="L1"><span class="pln">  </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"tab-pane"</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv1">"settings"</span><span class="tag">&gt;</span><span class="pln">...</span><span class="tag">&lt;/div&gt;</span></li><li class="L2"><span class="tag">&lt;/div&gt;</span><span class="pln"></span></li></ol></pre>
+        </div>
+      </div>
+</section>
+
+
+<section  id="modals" >
+	<div class="page-header">
+        <h1>Modals <small>modal.js</small></h1>
+    </div>
+    <div class="row-fluid">
+    	<div class="span8">
+            <div class="modal hide fade" id="myModal">
+                <div class="modal-header">
+                  <button data-dismiss="modal" class="close">×</button>
+                  <h3>Modal Heading</h3>
+                </div>
+                <div class="modal-body">
+                	<p>TEXT</p>
+                </div>
+                <div class="modal-footer">
+                  <a data-dismiss="modal" class="btn" href="#">Close</a>
+                  <a class="btn btn-primary" href="#">Save</a>
+                </div>
+          </div>
+           <a class="btn btn-primary btn-large" href="#myModal" data-toggle="modal">Launch demo modal</a>
+      </div>
+        <div class="span4">
+        	<pre class="prettyprint linenums"><ol class="linenums"><li class="L0">&lt;a class="btn" data-toggle="modal" href=<span class="atv">"#myModal"</span> &gt;Launch Modal&lt;/a&gt;</li></ol></pre>
+ 			<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"modal"</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"myModal"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">  </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"modal-header"</span><span class="tag">&gt;</span></li><li class="L2"><span class="pln">    </span><span class="tag">&lt;button</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"close"</span><span class="pln"> </span><span class="atn">data-dismiss</span><span class="pun">=</span><span class="atv">"modal"</span><span class="tag">&gt;</span><span class="pln">×</span><span class="tag">&lt;/button&gt;</span></li><li class="L3"><span class="pln">    </span><span class="tag">&lt;h3&gt;</span><span class="pln">Modal header</span><span class="tag">&lt;/h3&gt;</span></li><li class="L4"><span class="pln">  </span><span class="tag">&lt;/div&gt;</span></li><li class="L5"><span class="pln">  </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"modal-body"</span><span class="tag">&gt;</span></li><li class="L6"><span class="pln">    </span><span class="tag">&lt;p&gt;</span><span class="pln">One fine body…</span><span class="tag">&lt;/p&gt;</span></li><li class="L7"><span class="pln">  </span><span class="tag">&lt;/div&gt;</span></li><li class="L8"><span class="pln">  </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"modal-footer"</span><span class="tag">&gt;</span></li><li class="L9"><span class="pln">    </span><span class="tag">&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span>"#"</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"btn"</span><span class="tag">&gt;</span><span class="pln">Close</span><span class="tag">&lt;/a&gt;</span></li><li class="L0"><span class="pln">    </span><span class="tag">&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span>"#"</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"btn btn-primary"</span><span class="tag">&gt;</span><span class="pln">Save changes</span><span class="tag">&lt;/a&gt;</span></li><li class="L1"><span class="pln">  </span><span class="tag">&lt;/div&gt;</span></li><li class="L2"><span class="tag">&lt;/div&gt;</span></li></ol></pre>
+           
+      </div>
+     </div>
+</section>
+
+
+<section  id="typeahead" >
+	<div class="page-header">
+        <h1>Typeahead <small>typeahead.js</small></h1>
+    </div>
+    <div class="row-fluid">
+    	<div class="span8">
+            <div class="well">
+            <input type="text" data-source="[&quot;Alabama&quot;,&quot;Alaska&quot;,&quot;Arizona&quot;,&quot;Arkansas&quot;,&quot;California&quot;,&quot;Colorado&quot;,&quot;Connecticut&quot;,&quot;Delaware&quot;,&quot;Florida&quot;,&quot;Georgia&quot;,&quot;Hawaii&quot;,&quot;Idaho&quot;,&quot;Illinois&quot;,&quot;Indiana&quot;,&quot;Iowa&quot;,&quot;Kansas&quot;,&quot;Kentucky&quot;,&quot;Louisiana&quot;,&quot;Maine&quot;,&quot;Maryland&quot;,&quot;Massachusetts&quot;,&quot;Michigan&quot;,&quot;Minnesota&quot;,&quot;Mississippi&quot;,&quot;Missouri&quot;,&quot;Montana&quot;,&quot;Nebraska&quot;,&quot;Nevada&quot;,&quot;New Hampshire&quot;,&quot;New Jersey&quot;,&quot;New Mexico&quot;,&quot;New York&quot;,&quot;North Dakota&quot;,&quot;North Carolina&quot;,&quot;Ohio&quot;,&quot;Oklahoma&quot;,&quot;Oregon&quot;,&quot;Pennsylvania&quot;,&quot;Rhode Island&quot;,&quot;South Carolina&quot;,&quot;South Dakota&quot;,&quot;Tennessee&quot;,&quot;Texas&quot;,&quot;Utah&quot;,&quot;Vermont&quot;,&quot;Virginia&quot;,&quot;Washington&quot;,&quot;West Virginia&quot;,&quot;Wisconsin&quot;,&quot;Wyoming&quot;]" data-items="4" data-provide="typeahead" style="margin: 0 auto;" class="input-xlarge">
+            </div>
+        </div>
+        <div class="span4">
+        	<pre class="prettyprint linenums">&lt;input type="text" data-provide=<span class="atv">"typeahead"</span>&gt;</pre>
+           
+        </div>
+     </div>
+</section>
+      
+<section  id="typography">
+  <div class="page-header">
+    <h1>Typography</h1>
+  </div>
+
+  <!-- Headings & Paragraph Copy -->
+  <div class="row-fluid">
+    <div class="span8">
+      <h3>Example body text</h3>
+      <p>Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+      <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec sed odio dui.</p>
+      <p>Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula ut id elit. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec sed odio dui.</p>
+    </div>
+    <div class="span4">
+      <div class="well">
+        <h1>h1. Heading 1</h1>
+        <h2>h2. Heading 2</h2>
+        <h3>h3. Heading 3</h3>
+        <h4>h4. Heading 4</h4>
+        <h5>h5. Heading 5</h5>
+        <h6>h6. Heading 6</h6>
+        <p>p. text</p>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Lists -->
+  <table class="eso-table">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Code</th>
+        <th>Example</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          Unordered
+        </td>
+        <td>
+          <code>&lt;ul&gt;</code>
+        </td>
+        <td>
+          <ul>
+            <li>Facilisis in pretium nisl aliquet</li>
+            <li>Nulla volutpat aliquam velit</li>
+            <li>Faucibus porta lacus fringilla vel</li>
+          </ul>
+        </td>
+      </tr>
+     	<tr>
+        <td>
+          Unstyled
+        </td>
+        <td>
+          <code>&lt;ul class="unstyled"&gt;</code>
+        </td>
+        <td>
+          <ul class="unstyled">
+            <li>Facilisis in pretium nisl aliquet</li>
+            <li>Nulla volutpat aliquam velit</li>
+            <li>Faucibus porta lacus fringilla vel</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Ordered
+        </td>
+        <td>
+          <code>&lt;ol&gt;</code>
+        </td>
+        <td>
+          <ol>
+            <li>Facilisis in pretium nisl aliquet</li>
+            <li>Nulla volutpat aliquam velit</li>
+            <li>Faucibus porta lacus fringilla vel</li>
+          </ol>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Description
+        </td>
+        <td>
+          <code>&lt;dl&gt;</code>
+        </td>
+        <td>
+          <dl>
+            <dt>Description lists</dt>
+            <dd>A description list is perfect for defining terms.</dd>
+            <dt>Euismod</dt>
+            <dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
+            <dd>Donec id elit non mi porta gravida at eget metus.</dd>
+           </dl>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Horizontal description
+        </td>
+        <td>
+          <code>&lt;dl class="dl-horizontal"&gt;</code>
+        </td>
+        <td>
+          <dl class="dl-horizontal">
+            <dt>Description lists</dt>
+            <dd>A description list is perfect for defining terms.</dd>
+            <dt>Euismod</dt>
+            <dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
+            <dd>Donec id elit non mi porta gravida at eget metus.</dd>
+            <dt>Malesuada porta</dt>
+			<dd>Etiam porta sem malesuada magna mollis euismod.</dd>
+           </dl>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+
+</div>
+<footer class="footer">
+    <div class="pull-right">
+       
+        <div class='activetracking'>
+            <img src="images/activetracking.png"/>
+        
+        </div>
+         <!--<div class='poweredby'>
+       Powered by @<a href="jboss.org">JBoss</a>
+       <br><span>This is an example</span>
+        
+        </div>-->
+    </div>
+    <div class="hss-logo"></div>
+    <div class='copyright'>
+    <p>Version 2.0 <a href="#">Report an Issue</a></p>
+    <p>Copyright © 2012 Red Hat, Inc. All rights reserved.</p>
+    <p>INTERNAL USE ONLY</p>
+    <!--when the application use some tech supported by opensource, then please mark it here><p>Powered by <a href='http://www.redhat.com/products/jbossenterprisemiddleware/portal/'>@JBoss EAP</a></p><-->
+    </div>
+</footer>
+
+
+
+
+
+
+</div>
+      
+    
+<script>
+	$(".chzn-select").chosen(); 
+	$(".chzn-select-deselect").chosen({allow_single_deselect:true}); 
+</script>	
+	
+</body>
+</html>
